@@ -448,19 +448,19 @@ def welcome_screen():
     lbl_wlcm = Label(frm, text=f'Welcome, {tup[1]} ', font=('', 20, 'bold'), bg='pink')
     lbl_wlcm.place(relx=0, rely=0)
 
-    btn_details = Button(frm, command=details, text='Check Details', width=12, font=('', 15, 'bold'), bd=5)
+    btn_details = Button(frm, command=details, text='Check Details', width=14, font=('', 15, 'bold'), bd=5)
     btn_details.place(relx=0, rely=.2)
 
-    btn_deposite = Button(frm, command=deposite, text='Deposit Amount', width=12, font=('', 15, 'bold'), bd=5)
+    btn_deposite = Button(frm, command=deposite, text='Deposit Amount', width=14, font=('', 15, 'bold'), bd=5)
     btn_deposite.place(relx=0, rely=.3)
 
-    btn_withdraw = Button(frm, command=withdraw, text='Withdraw Amount', width=12, font=('', 15, 'bold'), bd=5)
+    btn_withdraw = Button(frm, command=withdraw, text='Withdraw Amount', width=14, font=('', 15, 'bold'), bd=5)
     btn_withdraw.place(relx=0, rely=.4)
 
-    btn_update = Button(frm, command=update, text='Update Details', width=12, font=('', 15, 'bold'), bd=5)
+    btn_update = Button(frm, command=update, text='Update Details', width=14, font=('', 15, 'bold'), bd=5)
     btn_update.place(relx=0, rely=.5)
 
-    btn_admin = Button(frm, command=admin, text='Admin Account', width=12, font=('', 15, 'bold'), bd=5)
+    btn_admin = Button(frm, command=admin, text='Admin Account', width=14, font=('', 15, 'bold'), bd=5)
     btn_admin.place(relx=0, rely=.6)
 
 def validate_email(email):
