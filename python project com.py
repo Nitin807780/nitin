@@ -88,8 +88,9 @@ def main_screen():
     lbl_pass = Label(frm, text='Pass', font=('', 20, 'bold'), bg='pink')
     lbl_pass.place(relx=.35, rely=.2)
 
-    e_pass = Entry(frm, font=('', 15), bd=5)
+    e_pass = Entry(frm, font=('', 15), bd=5, show="*")
     e_pass.place(relx=.45, rely=.2)
+    e_acn.focus()
 
     btn_login = Button(frm, command=login, text='Login', font=('', 15, 'bold'), bd=5)
     btn_login.place(relx=.478, rely=.3)
