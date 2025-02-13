@@ -87,10 +87,11 @@ def main_screen():
 
     lbl_pass = Label(frm, text='Pass', font=('', 20, 'bold'), bg='pink')
     lbl_pass.place(relx=.35, rely=.2)
-
+    
     e_pass = Entry(frm, font=('', 15), bd=5, show="*")
     e_pass.place(relx=.45, rely=.2)
-    e_acn.focus()
+    e_acn.focus() 
+
 
     btn_login = Button(frm, command=login, text='Login', font=('', 15, 'bold'), bd=5)
     btn_login.place(relx=.478, rely=.3)
@@ -298,7 +299,7 @@ def welcome_screen():
     def withdraw():
         ifrm = Frame(frm)
         ifrm.configure(bg='white')
-        ifrm.place(relx=.2, rely=.1, relwidth=.6, relheight=.7)
+        ifrm.place(relx=.2, rely=.15, relwidth=.7, relheight=.7)
 
         def withdrawacn():
             conobj = create_connection()
@@ -458,9 +459,10 @@ def welcome_screen():
     btn_withdraw = Button(frm, command=withdraw, text='Withdraw Amount', width=14, font=('', 15, 'bold'), bd=5)
     btn_withdraw.place(relx=0, rely=.4)
 
+
     btn_update = Button(frm, command=update, text='Update Details', width=14, font=('', 15, 'bold'), bd=5)
     btn_update.place(relx=0, rely=.5)
-
+    
     btn_admin = Button(frm, command=admin, text='Admin Account', width=14, font=('', 15, 'bold'), bd=5)
     btn_admin.place(relx=0, rely=.6)
 
